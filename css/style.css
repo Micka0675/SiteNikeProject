@@ -1,0 +1,1724 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+/* -------------------------------------------------SCROLLBAR--------------------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 9px;
+    border: 1px solid #d5d5d5;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: white;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: rgb(63, 63, 63);
+  }
+/* -------------------------------------------------------------------wrapper------------------------------------------------ */
+.default{
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+.wrapper{
+    -webkit-filter: blur(5px) brightness(0.8);
+    -moz-filter: blur(5px) brightness(0.8);
+    -ms-filter: blur(5px) brightness(0.8);
+    -o-filter: blur(5px) brightness(0.8);
+    filter: blur(5px) brightness(0.8);
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+/* -----------------------------------------------------------------------BOdy, Main----------------------------------------- */
+*{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+a{
+    color: #111;
+}
+
+a:hover{
+    cursor:pointer;
+}
+
+body{
+    background-color: white;
+}
+
+
+.main{
+    display:grid;
+    grid-template-rows: 0.1fr 0.9fr 0.2fr 0.4fr 0.3fr ;
+    background-color: white;
+}
+
+/* -------------------------------------------------------info deco------------------------------------------------------------- */
+
+.infoDeco{
+    height:400px;
+    text-align: center;
+}
+
+
+
+
+/* -----------------------------------------------------Bloc Login--------------------------------------------------- */
+.blocIdentify{
+    z-index: 1;
+    position: fixed;
+    top:25%;
+    left: 43%;
+    width: 340px;
+    max-width: 275px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    display:none;
+    border-radius: 5px;
+}
+
+
+
+.blocImage{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blocNike{
+    width:60%;
+    text-align: center;
+    margin: auto;
+}
+
+.blocClose{
+    width:100%;
+    text-align: right;
+    
+}
+
+.blocClose i{
+    font-size: 25px;
+    text-align: right;
+    cursor: pointer;
+}
+
+
+.blocIdentify img, .blocSignIn img{
+    width:50px;
+}
+
+.blocTitre{
+    background-color: white;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    width: 80%;
+}
+
+.blocInput{
+    background-color: white;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.blocInput p{
+    font-size: 14px;
+    text-align: center;
+}
+
+.inpt1{
+    height: 25px;
+    margin-bottom: 10px;
+    background-color: rgb(248, 250, 250);
+    border: solid black 1px;
+}
+
+.inpt1::placeholder{
+    color: rgb(66, 66, 66);
+}
+
+.inpt1:focus::placeholder{
+    color: rgb(163, 162, 162);
+}
+
+.sub{
+    background-color: black;
+    color: bisque;
+    border:none;
+    border-radius:2px;
+    font-size: 22px;
+    cursor: pointer;
+   
+}
+
+.parSign{
+    font-size: 10px;
+    width: 80%;
+   
+}
+
+.linkSign{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------------- Bloc sign in------------------------------------------*/
+
+.blocSignIn{
+    z-index: 1;
+    position: fixed;
+    top:25%;
+    left: 37%;
+    width: 436px;
+    max-width: 436px;
+    height: 500px;
+    background-color: rgb(251, 250, 250);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    display:none;
+    border-radius: 5px;
+}
+
+.blocInput2
+{
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.genre
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+}
+
+.parSign2{
+    margin: auto;
+    font-size: 15px;
+}
+
+.parSign2 a{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+/* --------------------------------------------------------------Lien déconnexion--------------------------------------- */
+.lienDeco{
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ----------------------------------------------------------Sous Nav ---------------------------------------------- */
+.sousNav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 35.5px;
+    margin: auto;
+    background-color:rgb(238, 236, 236);
+}
+
+.jorConv{
+    width: 20%;
+    margin: auto;
+}
+
+.sousNav img{
+    width:30px;
+}
+
+.blocRight{
+    width: 75%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.identify{
+    cursor: pointer;
+    width: 100px;
+    float: right;
+}
+
+.monCompte{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    color: #111;
+    font-weight: bold;
+    width: 30%;
+    height: 15px;
+}
+
+.logOn{
+    font-size: 15px;
+}
+
+.logOut{
+    color: #111;
+    font-size: 13px;
+    width: 30%;
+    height: 15px;
+}
+
+.logDiv{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.logDiv p{
+    width: 60%;
+    height:15px;
+    font-size: 13px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.panierImg{
+    font-size: 23px;
+    transition:0.2s;
+    color: #111;
+    margin-left: 10px;
+}
+
+.panierImg:hover{
+    color:goldenrod;
+}
+/* -------------------------------------------------------------------PROFIL----------------------------------------------- */
+.profil{
+    width: 100%;
+    min-height: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.blocListProfile{
+    width: 100%;
+    height: 300px;
+    background-color:#d5d5d5;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modifProfile{
+    color: #111;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+    margin-top: 15px;
+}
+
+.modifProfile:hover{
+    color: goldenrod;
+}
+
+.fa-pen{
+    margin-right: 15px;
+}
+
+.list-group{
+    text-align: center;
+    border: none;
+    width: 50%;
+}
+
+.list-group-item{
+    border: none;
+}
+
+.blocListHisto{
+    width:100%;
+    height: 600px;
+}
+
+.blocListHisto p{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.histoLine{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------------------------------------------------------------update profil----------------------------------------- */
+
+.updateform{
+    width:25%;
+    height: 800px;
+    min-width: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.updateform h3{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.genre{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height:40px;
+    margin-bottom: 15px;
+}
+
+/* --------------------------------------------------------------------HEADER---------------------------------------------- */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 23px;
+    width: 90%;
+    margin: auto;
+}
+
+header div{
+    width: 33%;
+}
+
+
+
+/* .blogImg{
+} */
+
+header img{
+    width: 70px;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color:white; */
+    width: 33%;
+    font-size: 15px;
+}
+
+.nav a{
+    margin-right: 20px;
+    color: #111;
+}
+
+.navTxt{
+    font-size: 15px;
+}
+
+.searchBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+}
+
+.boxInputSearch{
+    width:170px;
+    height:25px;
+    
+}
+
+.search{
+    height:20px;
+    max-width: 170px;
+    font-size: 13px;
+}
+
+.suggest{
+    width: 170px;
+    background-color: #111;
+    border-radius: 5px;
+    visibility: hidden;
+    height: 25px;
+    margin-top: 7px;
+}
+
+.suggest a{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    
+}
+
+.suggest a > p{
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.noResult{
+    color: aliceblue;
+    font-size: 13px;
+    font-family: 'arial',sans-serif;
+    margin: auto;
+}
+
+/* ----------------------------------------------------Page Infos Site------------------------------------------------------  */
+.infosSite{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+}
+/* ----------------------------------------------------BLOC BIENVENUE-------------------------------------------------------- */
+
+.pubEnTete{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+    
+    background-color: rgb(238, 236, 236);
+    margin-bottom: 50px;
+    height: 100px;
+}
+
+.pubEnTete a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 12px;
+    
+    text-decoration: underline;
+    color: #111;
+    background-color: rgb(238, 236, 236);
+}
+
+/* -------------------------------------------------------------------pages produits------------------------------------------ */
+.blocProduits{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+}
+
+.items2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    
+}
+
+.imgProduits{
+    width: 450px;
+    height: 450px;
+}
+
+.imgProduits2{
+    width: 400px;
+    height: 500px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.containerC{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgProduits3{
+    width: 300px;
+    height: 350px;
+    margin-bottom: 5px;
+}
+
+.blocGaucheProd{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    width: 60%;
+}
+
+.blocRightProd{
+    text-align: center;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blocRightProdM{
+    text-align: center;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 900px;
+}
+
+.blocRightProdM h3{
+    margin-bottom: 50px;
+}
+
+.commande{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-start; */
+}
+
+
+
+.taille{
+    width: 50px;
+    height:30px;
+    border-radius: 5px;
+    border: solid black 1px;
+}
+
+
+.envoiCommande{
+    width: 150px;
+    height: 50px;
+    background-color: #111;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 10px;
+    color: antiquewhite;
+}
+
+.descProduit{
+    font-size: 15px;
+    width: 90%;
+    text-align: center;
+}
+
+.imgProduits4{
+    width:700px;
+    height:800px;
+    margin-bottom: 5px;
+}
+
+.valueSelected{
+    visibility: hidden;
+    border-radius: 50px;
+}
+
+.pointures{
+    display: flex;
+    flex-flow: wrap;
+    width: 150px;
+}
+
+.pointures{
+    text-align: center;
+}
+
+.blank{
+    width: 100%;
+    height:25px;
+}
+
+.pointures label{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+    
+}
+/* -----------------------------------------------------------------Image principale----------------------------------------- */
+.containerPp{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produitPhare{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produitPhare h1{
+    font-size: 65px;
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -4px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+.nikeMaillots{
+    width: 95%;
+}
+
+.blocTxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 23px;
+}
+
+.voir{
+    width: 90px;
+    height: 45px;
+    background-color: black;
+    border-radius: 25px;
+    font-size: 27px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.voir:hover{
+    color: antiquewhite;
+}
+
+/* --------------------------------------------------------------SLIDER------------------------------------------------------ */
+
+h2{
+    width: 95%;
+    margin-left: 5%;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-snap-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.containerSlide{
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+}
+
+.blocSlider{
+    display:flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; 
+    height:650px;
+    margin: auto;
+    width: 95%;
+}
+
+.commentaire{
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 23px;
+}
+
+.description{
+    background-color: white;
+}
+
+.prix{
+    background-color: white;
+}
+
+.imgSlide{
+   width: 500px;
+   height:500px;
+}
+
+/* .enTete{
+} */
+/* ----------------------------------------------------------------Bloc images----------------------------------------------  */
+.images{
+    display: flex;
+    justify-content: space-around;
+    width:95%;
+    margin: auto;
+}
+
+.gauche{
+    display: flex;
+    width: 49.7%;
+    height: 1000px;
+    background-image: url("../images/crampon1.webp");
+    background-size: cover;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    color: aliceblue;
+}
+
+.blocChoix{
+    height: 50px;
+    /* z-index: 1; */
+    position: relative;
+    left:-80%;
+    bottom:-80%;
+}
+
+
+.droite{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 49.7%;
+    height: 1000px;
+}
+
+.voirAbsol{
+    position: relative;
+    left: 35%;
+    bottom: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.voirAbsol label{
+    font-family: 'Roboto',sans-serif;
+    font-size: 35px;
+}
+
+.img1{
+    margin-bottom: 0.3%;
+    background-image: url("../images/crampon2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+    height: 50%;
+}
+
+.voirAbsol2, .voirAbsol3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+}
+
+.voirAbsol a, .voirAbsol2 a, .voirAbsol3 a{
+    width: 90px;
+    height: 40px;
+    background-color: black;
+    border-radius: 25px;
+    font-size: 27px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border: solid white 1px;
+}
+
+.inputLeft:hover{
+    color: bisque;
+}
+
+
+
+.img2{
+    margin-top: 0.3%;
+    background-image: url("../images/crampon3.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+    height: 50%;
+}
+
+.confirmCommande{
+    width: 80%;
+    height: 500px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238, 236, 236);
+    margin: auto;
+}
+
+.confirmCommande input{
+    margin-top: 25px;
+    height: 40px;
+    background-color: #111;
+    color: antiquewhite;
+    border-radius: 10px;
+    border: none;
+}
+
+/* ---------------------------------------------------------------FOOTER--------------------------------------------------------- */
+footer{
+    margin-top: 50px;
+    background-color: #111;
+    color:white;
+    font-family: 'Roboto',sans-serif;
+    height: 25%;
+}
+
+.ligne1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    text-align: center;
+}
+
+.colone1{
+    width: 30%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.colone1 p {
+    font-size: 10px;
+}
+
+.colone2{
+    width: 30%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 6px;
+}
+
+.colone2 h4{
+    font-size: 10px;
+}
+
+.colone2 p{
+    font-size: 12px;
+}
+
+.colone3{
+    width: 30%;
+    height: 150px;
+}
+
+.colone3 i{
+    font-size: 25px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.ligne2{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 30%;
+}
+
+.ligne2 p{
+    font-size: 12px;
+}
+
+.ligne3{
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ligne3 p{
+    font-size: 12px;
+    
+}
+
+/* -------------------------------------------------Panier--------------------------------------------------------- */
+.commande{
+    width: 95%;
+    min-height:800px;
+    margin: auto;
+}
+
+.blocCom{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 500px;
+}
+
+.ligneCommande{
+    margin-top: 50px;
+    float: left;
+}
+
+.minImg{
+    width: 100px;
+}
+
+.validCom{
+    background-color: #111;
+    color: antiquewhite;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+}
+
+
+
+@media screen and (min-width:921px) and (max-width:1460px){
+
+
+    /* ----------------------------------------------Sous Nav------------------------------------------------------ */
+
+    .logDiv p{
+        font-size: 8px;
+        /* width: 100px; */
+    }
+
+    .logOut{
+        font-size: 8px;
+    }
+
+    .panierImg{
+        margin-left: 10px;
+        font-size: 23px;
+    }
+
+    .monCompte{
+        font-size: 8px;
+    }
+    /* -----------------------------------------login-------------------------------------------------------------- */
+
+    
+    
+    
+    .blocClose i{
+        font-size: 25px;
+    }
+    
+    .blocIdentify{
+        left: 35%;
+    }
+
+    .blocIdentify img{
+        width:50px;
+    }
+
+    
+    .blocInput p{
+        font-size: 11px;
+    }
+    
+    .sub{
+        font-size: 18px;
+    }
+    /* ------------------------------------------------------------------------------------------------------------- */
+    /* ----------------------------------------------------bloc Sign In-------------------------------------------- */
+
+    .blocSignIn{
+        z-index: 1;
+        position: fixed;
+        left: 30%;
+    }
+
+    .parSign2{
+        margin: auto;
+        font-size: 15px;
+    }
+
+    .parSign2 a{
+        text-decoration: underline;
+    }
+
+    
+    /* ------------------------------------------------------------------------------------------------------------------- */
+    .main{
+        display:grid;
+        grid-template-rows: 0.1fr 0.8fr 0.1fr 0.3fr;
+        background-color: white;
+    }
+
+    .nav p{
+        font-size: 14px;
+    }
+
+    .searchBox{
+        justify-content:space-evenly ;
+    }
+
+    i.search{
+        display: none;
+    }
+
+    .pubEnTete{
+        height:60px;
+    }
+
+    .pubEnTete p{
+        font-size: 12px;
+    }
+
+    .voir{
+        width:80px;
+        height: 40px;
+    }
+
+    .produitPhare{
+        height: 600px;
+    }
+    .containerPp{
+        justify-content:center;
+    }
+
+    .nikeMaillots{
+        width: 80%;
+    }
+
+    /* ---------------------------------------------------------Slider------------------------------------------------------- */
+
+    .blocSlider{
+        height: 550px;
+    }
+
+    .imgSlide{
+        width: 400px;
+        height:400px;
+     }
+
+    .items{
+        margin-right:0;
+    }
+
+
+    .blocTxt h1{
+        font-size: 60px;
+    }
+
+    /* --------------------------------------------------------blocImages----------------- */
+
+
+    
+
+    .images{
+        width: 95%;
+        margin: auto;
+    }
+
+    .gauche{
+        width: 49.7%;
+        height: 400px;
+        color: aliceblue;
+    }
+    .voirAbsol{
+        left: 35%;
+        bottom: 35%;
+    }
+    
+    .voirAbsol a, .voirAbsol2 a, .voirAbsol3 a{
+        width: 60px;
+        height: 30px;
+        background-color: black;
+        border-radius: 25px;
+        font-size: 19px;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        border: solid white 1px;
+        font-family: 'Roboto',sans-serif;
+    }
+    
+    .voirAbsol label{
+        font-family: 'Roboto',sans-serif;
+        font-size: 20px;
+    }
+    
+    
+    
+    .voirAbsol2, .voirAbsol3{
+        font-size: 16px;
+    }
+    
+    
+    
+    .img2{
+        margin-top: 0.3%;
+        background-image: url("../images/crampon3.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 95%;
+        height: 50%;
+    }
+
+    .droite{
+        width: 49.7%;
+        height: 400px;
+        font-family: 'Roboto',sans-serif;
+    }
+
+    /* ---------------------------------------------------------pages produits------------------------------------------ */
+    .imgProduits4{
+        width:350px;
+        height:450px;
+        margin-bottom: 5px;
+    }
+
+    .blocRightProd{
+        height: 1000px;
+    }
+
+
+    /* ---------------------------------------------------------footer-------------------------------------------------- */
+    footer{
+        height: 30%;
+    }
+
+    .ligne2{
+        margin-left: 40%;
+    }
+   
+}
+
+@media screen and (min-width:441px) and (max-width:920px){
+
+       
+        header{
+            height:52px;
+        }
+
+
+        /* -----------------------------------------login-------------------------------------------------------------- */
+
+        .blocRight{
+            text-align: center;
+        }
+
+        .logDiv{
+            
+            font-size: 8px;
+            /* width: 200px; */
+        }
+
+        .logDiv p{
+            font-size: 6px;
+            width: 120px;
+        }
+    
+        .logOut{
+            width: 140px;
+            font-size: 6px;
+        }
+
+        .panierImg{
+            font-size: 16px;
+        }
+
+        .blocIdentify{
+            max-height: 400px;
+            left: 20%;
+        }
+
+        .blocIdentify h3{
+            font-size: 15px;
+            
+        }
+
+        .logoNike2{
+            width:20px;
+        }
+
+    
+        
+        .blocClose i{
+            font-size: 20px;
+        }
+        
+        
+        .blocIdentify img{
+            width:50px;
+        }
+    
+        
+        .blocInput p{
+            font-size: 8px;
+        }
+        
+        .sub{
+            font-size: 15px;
+        }
+        /* ----------------------------------------------------bloc Sign In-------------------------------------------- */
+
+        .blocSignIn{
+            z-index: 1;
+            position: fixed;
+            left: 5%;
+        }
+
+        .parSign2{
+            margin: auto;
+            font-size: 15px;
+        }
+    
+        .parSign2 a{
+            text-decoration: underline;
+        }
+
+    /* ------------------------------------------------------------Bloc Main-------------------------------------------- */
+    .main{
+        display:grid;
+        grid-template-rows: 0.1fr 0.4fr 0.1fr 0.2fr ;
+        background-color: white;
+    }
+    /* ------------------------------------------------------------pages produits--------------------------------------------- */
+    .container{
+        min-height: 1056px;
+    }
+
+    .containerC{
+        min-height: 1390px;
+    }
+    
+    .imgProduits{
+        width: 400px;
+        height: 400px;
+    }
+
+    .imgProduits3{
+        width: 250px;
+        height: 300px;
+        margin-bottom: 5px;
+    }
+
+    .imgProduits4{
+        width:280px;
+        height:380px;
+        margin-bottom: 5px;
+    }
+
+    .pointures label{
+        width: 100px;
+    }
+
+    .blocRightProd{
+        height: 1000px;
+    }
+
+    .envoiCommande{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 22px;
+        padding-top: 11px;
+    }
+    /* -----------------------------------------------------------sous nav------------------------------------------------- */
+    
+    .monCompte{
+        font-size: 6px;
+    }
+
+    /* ------------------------------------------------------------nav----------------------------------------------------- */
+
+    .searchBox{
+        text-align: center;
+        font-size: 10px;
+    }
+    
+    .search{
+        width: 100px;
+        height: 20px;
+        margin-top: 10px;
+    }
+
+    .suggest{
+        width: 100px;
+    }
+
+    .nav p{
+        font-size: 9px;
+    }
+
+    .nav{
+        width:50%;
+        text-align: center;
+    }
+
+    
+
+    .blocImg{
+        width: 33%;
+    }
+
+    .logoNike{
+        width: 50px;
+    }
+
+    /* --------------------------------------------------------------bloc Bienvenue------------------------------------------- */
+
+    .pubEnTete{
+        height:60px;
+    }
+
+    .pubEnTete p{
+        font-size: 10px;
+    }
+
+    .blocTxt h1{
+        font-size: 60px;
+        
+    }
+
+    .voir{
+        width:80px;
+        height: 40px;
+    }
+
+    /* ---------------------------------------------------------------SLIDER------------------------------------------------- */
+    .blocSlider{
+        height: 470px;
+    }
+
+    .imgSlide{
+        width: 300px;
+        height:300px;
+     }
+
+
+    /* --------------------------------------------------------------bloc 3 images------------------------------------------- */
+
+    
+
+    .images{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .gauche{
+        width: 95%;
+        height: 600px;
+        color: aliceblue;
+    }
+
+    .droite{
+        width: 95%;
+        height: 600px;
+    }
+
+    .img1{
+        margin-top: 20px;
+        background-image: url("../images/crampon2.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 50%;
+    }
+    
+    .img2{
+        margin-top: 20px;
+        background-image: url("../images/crampon3.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 50%;
+    }
+
+    .voirAbsol{
+        left: 40%;
+        bottom: 45%;
+    }
+    
+    .voirAbsol a, .voirAbsol2 a, .voirAbsol3 a{
+        width:55px;
+        height: 25px;
+        color: white;
+        font-size:16px;
+        background-color: black;
+        border: solid white 1px;
+        border-radius: 20px;
+        font-family: 'Roboto',sans-serif;
+    }
+    
+    .voirAbsol label{
+        font-family: 'Roboto',sans-serif;
+        font-size: 20px;
+    }
+    
+    
+    
+    .voirAbsol2, .voirAbsol3{
+        font-size: 20px;
+    }
+
+    /* ------------------------------------------------------------------------footer---------------------------------------------------------- */
+    
+    footer{
+        height: 250px;
+    }
+
+
+    .ligne2{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin:auto;
+    }
+
+    .ligne2 p{
+        font-size: 8px;
+    }
+    
+}
+
+@media screen and (max-width:441px){
+
+    /* --------------------------------------------------- Login/signin----------------------------- */
+    .blocIdentify{
+        top:5%;
+        left:12%;
+    }
+
+    .blocSignIn{
+        top:5%;
+        left:5%;
+        width:80%;
+        height:550px;
+    }
+
+    .genre{
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-secondary{
+        width: 90px;
+        height:70px;
+    }
+
+    .sub{
+        margin-top: 25px;
+    }
+    /* ---------------------------------------------------main index --------------------------------*/
+    .main{
+        display:grid;
+        grid-template-rows: 0.1fr 1fr 0.1fr 0.1fr 0.3fr ;
+        background-color: white;
+    }
+
+    .enTete{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .blocSlider{
+        height: 450px;
+    }
+
+    .gauche{
+        height: 500px;
+    }
+
+    .voirAbsol, .voirAbsol2 ,.voirAbsol3{
+        position: relative;
+        top:10px;
+        left:10px;
+        font-size: 15px;
+        height:50px;
+    }
+
+    .voirAbsol label , .voirAbsol2 label, .voirAbsol3 label{
+        font-size: 15px;
+        font-weight: bolder;
+        margin-bottom: 15px;
+    }
+
+    .voirAbsol a, .voirAbsol2 a, .voirAbsol3 a{
+        height: 30px;
+        width: 50px;
+        font-size: 15px;
+    }
+
+    .droite{
+        height:500px;
+    }
+
+    .blocTxt h1{
+        font-size: 60px;
+    }
+
+    .imgSlide{
+        width: 300px;
+        height:300px;
+     }
+    /* ------------------------------------------------SousNav-------------------------------------------- */
+
+    .jorConv{
+        display: none;
+    }
+
+    .blocRight{
+        width:100%;
+        justify-content: center;
+        margin: auto;
+        padding-right: 0px;
+    }
+
+    .boxInputSearch{
+        width:70px;
+    }
+
+    .logDiv{
+        width: 98%;
+    }
+
+    .monCompte{
+        font-size: 10px;
+    }
+
+    .logDiv p, .logOut{
+        font-size: 10px;
+    }
+
+    .linkPanier i{
+        font-size: 15px;
+    }
+    /* ------------------------------------------------nav------------------------------------------------ */
+    .blocImg{
+        width: 15%;
+    }
+
+    .logoNike{
+        width: 100%;
+    }
+
+    .nav{
+        width: 60%;
+    }
+
+    .suggest{
+        width: 70px;
+    }
+
+    .searchBox{
+        width: 22%;
+    }
+
+    .search{
+        width:70px;
+    }
+
+    .nav p{
+        font-size: 9px;
+    }
+
+    /* --------------------------------------------------produits---------------------------------------------- */
+    .container{
+        margin-top: 20px;
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerC{
+        margin-top: 20px;
+        height: 2800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .imgProduits,.imgProduits2,.imgProduits3,.imgProduits4{
+        width: 300px;
+        height:300px;
+    }
+
+    .blocRightProdM{
+        width:100%
+    }
+
+    .blocRightProd{
+        width: 100%;
+    }
+
+    .blocRightProdM h3{
+        margin-top: 20px;
+    }
+
+    .commande{
+        width: 95%;
+        min-height: 0;
+        margin: 0;
+    }
+    .descProduit{
+        width: 100%;
+    }
+
+    .commentaire{
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .envoiCommande{
+        margin-bottom: 10px;
+        width: 200px;
+        font-size: 19px;
+    }
+
+    /* --------------------------------------------------update----------------------------------------------- */
+    .list-group{
+        width: 90%;
+    }
+    /* --------------------------------------------------footer----------------------------------------------- */
+    footer{
+        min-height: 500px;
+    }
+    
+}
+
+
+
+
